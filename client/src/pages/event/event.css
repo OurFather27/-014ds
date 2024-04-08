@@ -1,0 +1,152 @@
+.EventBox{
+  width: 100%;
+  height: auto;
+/*  border: solid 2px red ;*/
+box-shadow: 0px 0px 10px 0px lightgrey;
+margin-top: 40px;
+background-color: #990099;
+margin-bottom: 20px;
+}
+.EventBox2{
+/*  border: solid 2px black;*/
+  height: auto;
+  width: 70%;
+  margin: auto;
+}
+.EventBox2 h1{
+  text-align: center;
+  font-size: 40px;
+  font-weight: ;
+  color: white;
+    text-transform: uppercase;
+     text-shadow:3px 5px 0px grey ;
+    font-family: 'noirpro', fantasy;;
+}
+.EventBox2 p{
+  text-align: center;
+  color: #ccc;
+}
+.EventBox3 img{
+  width:100%;
+  height: 400px;
+}
+.EventBox3{
+  width:45%;
+  height: 400px;
+/*  border:solid 1px white;*/
+  margin: 10px;
+  display: inline-block;
+  box-shadow: 0px 0px 10px 0px white;
+}
+.EventBox3:hover{
+    box-shadow:0px 0px 0px 2px white;
+}
+.Event_content h3{
+  color: #ccc;
+}
+.Event_content p{
+  text-align: unset;
+}
+
+/*Event View*/
+.EventBoxView{
+  width: 70%;
+  margin: auto;
+  box-shadow: 0px 0px 10px 0px lightgrey;
+  border-radius: 30px;
+  margin-top: 20px;
+
+}
+.EventBoxView img{
+  width: 100%;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+.EventBox3View{
+/*  border: solid 3px green;*/
+
+}
+.Event_content{
+  margin-left: 5px;
+  width: auto;
+/*  border: solid 2px red;*/
+}
+
+
+.AllEventBox{
+  width: 90%;
+/*  border: solid 2px red;*/
+  margin: auto;
+}
+.AllEventBox2{
+  width: ;
+/*  border: solid 4px black;*/
+  margin: auto;
+  width: auto;
+}
+.AllEventBox3{
+  width: 32%;
+  height: auto;
+/*  border:solid 3px red;*/
+  display: inline-block;
+  box-shadow:0px 0px 10px 0px grey;
+  margin: 5px;
+
+}
+.AllEventBox3 img{
+  width: 100%;
+  height: auto;
+}
+.AllEventBox3:hover{
+/*  padding: 1px;*/
+  box-shadow:0px 0px 0px 2px #990099;
+}
+.AllEvent_content{
+    box-shadow:0px 0px 10px 0px grey;
+
+}
+/********** Responsive Design ********/
+@media(max-width:900px)
+{
+.EventBoxView{
+  width: 90%;
+}  
+.EventBox3{
+  display: unset;
+}
+.AllEventBox3{
+  display: unset;
+  width:auto;
+  margin:auto;
+}
+}
+@media(max-width:768px)
+{
+.EventBoxView{
+  width: 90%;
+}
+.EventBox3{
+  display: unset;
+}
+.AllEventBox3{
+  display: unset;
+  width:auto;
+  margin:auto;
+
+}
+}
+@media(max-width:568px)
+{
+.EventBoxView{
+  width: 90%;
+}  
+.EventBox3{
+  display: unset;
+}
+.AllEventBox3{
+  display: unset;
+  width:auto;
+  margin:auto;
+
+}
+}

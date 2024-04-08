@@ -1,0 +1,212 @@
+.NavContainer {
+/*  border: solid 1px red;*/
+  height: 70px;
+  width: auto;
+  background-color:white;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  --above-all-in-container: 10000;
+  box-shadow: 0px 2px  6px grey;
+}
+
+.NavLinks {
+  text-transform: uppercase;
+
+}
+.Newtestment{
+  position: absolute;
+  color:black;
+  left:3.5%;
+  bottom: 0%;
+}
+.Newtestment span{
+  color:#990099;
+  font-weight: 500;
+  font-family: 'noirpro', sans-serif;
+  font-size: 20px;
+}
+.NavContainer img{
+  width: 50px;
+  border-radius: 110%;
+}
+.NavContainer{
+}
+.NavList_Elements .contact{
+  background-color: #990099;
+  padding: 2px;
+  border-radius: 5px;
+  color: white;
+
+}
+.NavList_Elements .contact:hover{
+  background-color: rgb(15 26 63);
+  color: white;
+  transition: all 0.5s ease-in;
+}
+
+.NavMenuIcon {
+  display: none;
+  color: white;
+
+}
+.NavList_Elements{
+   margin: auto;
+}
+
+.NavList_Elements ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style-type: none;
+
+}
+
+.NavList_Elements ul li:not(:last-child) {
+  margin-right: 40px;
+}
+
+.NavList_Elements ul a {
+  color: black;
+  font-size: 19px;
+  text-align: center;
+  font-weight: 500;
+  text-decoration: none;
+}
+.NavList_Elements li{
+   /* color:;
+    position: relative;*/
+}
+/*.NavList_Elements ul a::after{
+      content: '';
+    height:2px;
+    width:0px;
+    background-color: lightgrey;
+    position: absolute;
+    bottom: 0;
+    left:0;
+    transition: 0.3s ease;
+}*/
+.NavList_Elements ul a:hover::after{
+  width: 34px;
+}
+
+.NavList_Elements ul a.active {
+}
+.NavList_Elements ul a:hover{
+  color: grey;
+    transition: all 0.3s ease-in;
+    width: 20%;
+    border-bottom:solid 2px lightgrey;
+
+}
+
+/*.NavList_Elements ul a.active::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #574c4c;
+}*/
+
+
+@media only screen 
+and (min-device-width : 240px) 
+and (max-device-width : 719px)
+{
+  .NavContainer{
+    width:auto;
+  }
+
+  .NavList_Elements ul a {
+  font-size: 18px;
+}
+.NavMenuIcon {
+  font-size: 40px;
+  display: block;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  margin-right: 10px;
+  color: #990099;
+}
+
+.NavList_Elements{
+  position: absolute;
+  right: 0;
+  top: 80px;
+  width: 0px;
+  background-color:white;
+  height: calc(100vh - 60px);
+  transition: all 0.3s ease-in;
+  overflow: hidden;
+}
+.logout{
+    /* corner lay endehon 0 maderg becha */
+  position: absolute;
+  margin-top: 55%;
+  left: 45%;
+}
+.NavList_Elements.active {
+  width: 100%;
+  height: 300px;
+}
+
+.NavList_Elements ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.NavList_Elements ul li {
+  margin-right: unset;
+  margin-top: 15px;
+}
+
+}
+@media only screen 
+and (min-device-width : 720px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait)
+ {
+.NavList_Elements ul li:not(:last-child) {
+  margin-right: 25px;
+  font-size: 10px;
+}
+.NavContainer{
+}
+
+
+}
+
+
+/********** Responsive Design ********/
+@media(max-width:900px)
+{
+.Newtestment{
+  left:4.5%;
+  bottom:;
+}
+.Newtestment p{
+  margin-bottom: -30%;
+}
+}
+@media(max-width:768px)
+{
+.Newtestment{
+  left:4.5%;
+  bottom: ;
+
+}
+.Newtestment span{
+ 
+  font-size: 10px;
+}
+}
+@media(max-width:568px)
+{
+
+}

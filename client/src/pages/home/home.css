@@ -1,0 +1,252 @@
+
+.watch{
+/*  border:soild 3px red;*/
+  width:auto;
+  height: auto;
+}
+a-assets video{
+/*  border:solid 3px red;*/
+  width: 100%;
+  height: auto;
+  z-index:-1;
+  /*to edit the opacity effect change the percentage below */
+  filter:opacity(40%);
+
+
+}
+
+header h1 {
+  z-index: 1;
+  color: white;
+  font-size: 64px;
+  font-weight: 1000;
+  margin-top:-40%;
+  font-family: 'noirpro', sans-serif;
+  text-transform: uppercase;
+      text-shadow:3px 5px 0px rgba(5, 6, 7, 80.90) ;
+
+}
+.HeaderPage{
+  height: auto;
+  width: auto;
+  background-color: black;
+}
+.HeaderPage h1{
+  font-family: 'Jost',sans-serif;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 65px;
+  font-weight: 800;
+  transform: translate(-50%, -50%);
+}              
+                               /*middle page  for home page*/
+.middlePage{
+/*  border: solid 2px red;*/
+margin-top: 5%;
+  width: 100%;
+  height:550px;
+
+}
+.middlePage_2{
+/*    border: solid 2px black;*/
+    margin: auto;
+    width: 100%;
+    height:auto;
+
+}
+.middlePage_box{
+  margin-top: ;
+  text-align: center;
+
+}
+.middlePage_box p{
+  font-weight: 500;
+  color: #990099;
+/*  border:solid 3px red;*/
+  width: auto;
+  height: auto;
+  margin-left: 23%;
+  margin-top: 25%;
+/*     -webkit-box-shadow: 0px 0px 16px -10px grey;*/
+    box-shadow: 0px 0px 40px -10px grey;
+
+}
+.middlePage h2{
+  color:#990099;
+/*  margin-top: 15%;*/
+  font-size: 40px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+      text-shadow:3px 5px 0px rgba(0, 0, 0, 0.30) ;
+    font-family:  Trattatello, fantasy  ;
+}
+.middlePage .middlePage_box{
+}
+.middlePage_continaer{
+  width:49%;
+/*  border:solid 2px green;*/
+  height: 400px;
+  float: left;
+
+}
+.middlePage img{
+  width:100%;
+  border-radius: 20px;
+  height: auto;
+}
+ 
+                                /*Group continer*/
+.group_continaer{
+  width: 100%;
+  height: auto;
+  margin-bottom:5% ;
+  margin-top: 30px;
+/*  border: solid 2px red;*/
+/*  margin-top: -10%;*/
+}
+.group_continaer2{
+  border-radius: 15px;
+  width: 20%;
+  margin-left: 4%;
+  margin-top: 20px;
+  height: auto;
+  display: inline-block;
+  text-align: center;
+  justify-items: center;
+/*  border: solid 2px green;*/
+  box-shadow: 0px 0px 40px -10px grey;
+
+
+
+
+}
+.group_continaer3 h1{
+  color: #990099;
+  text-align: center;
+  margin-top: 20px;
+    font-size: 40px;
+    text-transform: uppercase;
+      text-shadow:3px 5px 0px rgba(0, 0, 0, 0.30) ;
+    font-family:  fantasy;
+/*  border: solid 1px green;*/
+}
+.group_continaer2 label{
+  background-color: #990099;
+  color: white;
+  padding: 5px;
+  bottom: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+
+
+}
+.group_continaer2 h2{
+  color: #990099;
+  font-family:    fantasy;
+  font-size: 27px;
+}
+.group_continaer_image{
+  height: auto;
+  width: 100%;
+}
+.group_continaer_image img{
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+
+
+                                      /********** Responsive Design ********/
+@media(max-width:900px)
+{
+a-assets video{
+/*  border:solid 3px red;*/
+  margin-top: 0%;
+  width: auto;
+  height: auto;
+}
+.HeaderPage h1{
+  font-size: 40px;
+  margin-top:-15% ;
+
+}              
+  
+                            /*middle page latest sermons////////////////*/
+.middlePage{
+/*  height:auto;*/
+}
+.middlePage_2{
+/*  width: 100%;*/
+}
+.middlePage_continaer{
+/*  float: none;
+  width: auto;
+  height: auto;*/
+
+}
+.middlePage img{
+  position: unset;
+  width: 100%;
+  height: auto;
+}
+.middlePage_continaer{
+    float: none;
+}
+.middlePage_box p{
+  width: auto;
+  height: auto;
+  margin-top: 5%;
+  margin: auto;
+
+
+}
+
+                            /* Events //////////////////// */
+
+.group_continaer2{
+    display:list-item;
+    width: auto;
+    height: auto;
+/*    border: solid 2px green;*/
+    margin: auto;
+    margin-top: 0px;
+}
+}
+@media(max-width:768px)
+{
+   a-assets video{
+/*  border:solid 3px red;*/
+  width: 100%;
+  height: auto;
+}
+.HeaderPage h1{
+  font-size: 40px;
+  margin-top:-15% ;
+/*  border: solid 1px red;*/
+}
+.group_continaer2 label{
+  text-align: left;
+}    
+}
+@media(max-width:568px)
+{
+    .Header_container_main video {
+    width:;
+  height: 545px;
+}
+.middlePage_continaer{
+  float: none;
+  width: auto;
+  height: auto;
+
+}
+.middlePage img{
+  position: unset;
+  width: 100%;
+  height: auto;
+}
+}

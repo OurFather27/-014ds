@@ -1,0 +1,196 @@
+.Groups{
+	border: solid 2px red;
+	width: 80%;
+	margin: auto;
+	height: auto;
+}
+.Groups2{
+	border: solid 2px green;
+	width: 90%;
+	margin: auto;
+	margin-top: 10px;
+}
+.Groups3{
+	width: auto;
+	height: auto;
+	display: inline-grid;
+	margin: 12px;
+	grid-auto-columns: 2 2 2;
+	 box-shadow: 0px 0px 10px 0px lightgrey;
+
+}
+.Groups3 img{
+	width: 300px;
+	height: auto;
+}
+.Groups3 h3{
+	font-family: monospace;
+}
+
+                               /*middle 3  Group box                             */
+.GroupBox{
+  width: 90%;
+  height: auto;
+/*  border: solid 2px red ;*/
+/*box-shadow: 0px 0px 10px 0px lightgrey;*/
+margin: auto;
+}
+.GroupBox2{
+/*  border: solid 2px black;*/
+  height: auto;
+  width:auto;
+  margin: auto;
+
+}
+.GroupBox2 img{
+  width:100%;
+  height: auto;
+}
+.GroupBox2 h1{
+  color: #990099;
+  text-align: center;
+  margin-top: 20px;
+  font-weight: 700;
+    font-size: 40px;
+    text-transform: uppercase;
+      text-shadow:3px 5px 0px rgba(0, 0, 0, 0.30) ;
+    font-family: 'noirpro', sans-serif;
+/*  border: solid 1px green;*/;
+}
+.GroupBox2 p{
+  text-align: center;
+  color: #ccc;
+}
+.GroupBox3{
+  width:31%;
+  height: auto;
+/*  border:solid 1px red;*/
+  margin: 10px;
+  display: inline-block;
+  box-shadow: 0px 0px 10px 0px lightgrey;
+
+}
+.Group_content{
+
+}
+.Group_content h3{
+  color: #ccc;
+  margin-right: 10px;
+}
+.Group_content p{
+  text-align: unset;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.share {
+  width: 30%;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+  box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+}
+
+.shareWrapper {
+  padding: 10px;
+}
+
+.shareTop {
+  display: flex;
+  align-items: center;
+}
+
+.shareProfileImg {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.shareInput {
+  border: none;
+  width: 80%;
+}
+
+.shareInput:focus {
+  outline: none;
+}
+
+.shareHr {
+  margin: 20px;
+}
+
+.shareBottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.shareOptions{
+    display: flex;
+    margin-left: 20px;
+}
+
+.shareOption{
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.shareIcon{
+    font-size: 18px;
+    margin-right: 3px;
+}
+
+.shareOptionText{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.shareButton{
+    border: none;
+    padding: 7px;
+    border-radius: 5px;
+    background-color: green;
+    font-weight: 500;
+    margin-right: 20px;
+    cursor: pointer;
+    color: white;
+}
+
+.shareImgContainer{
+  padding: 0 20px 10px 20px;
+  position: relative;
+  width: 30%;
+}
+
+.shareImg{
+  width: 20%;
+  object-fit: cover;
+}
+
+.shareCancelImg{
+  position: absolute;
+  top: 0;
+  right: 20px;
+  cursor: pointer;
+  opacity: 0.7;
+}

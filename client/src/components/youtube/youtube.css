@@ -1,0 +1,251 @@
+.SermonBox{
+/*	border: solid 3px black;*/
+/*	height: auto;*/
+/*	margin-bottom:5% ;*/
+}
+.playlists{
+/*	border: solid 2px red;*/
+	width: 17%;
+	height:auto;
+	border: solid 3px lightgrey;
+	margin-top: -35%;
+
+}
+.playlists h1{
+	color:#990099;
+	font-size: 16px;
+	font-family: sans-serif;
+	font-weight: 700;
+	margin: 5px;
+}
+.playlists hr{
+	color: lightgrey;
+	width: 50%;
+	margin: auto;
+	box-shadow: 10px 10px 10px white;
+}
+.sermon{
+	align-items: center;
+	text-align: center;
+	margin-top: 40px;
+/*	border: solid 2px red;*/
+	height: 1000px;
+	margin: auto;
+	width: 80%;
+	margin-bottom: 10%;
+
+}
+
+.playlists2{
+/*	border: solid 2px red;*/
+	width: 17%;
+	height:auto;
+	margin-right: 0;
+	position: static;
+	right: 0;
+	top: 18%;
+	border: solid 3px white;
+	
+
+}
+.playlists2 h1{
+	color:#990099;
+	font-size: 16px;
+	font-family: sans-serif;
+	font-weight: 700;
+	margin: 5px;
+}
+.playlists2 hr{
+	color: lightgrey;
+	width: 50%;
+	margin: auto;
+	box-shadow: 10px 10px 10px #990099;
+}
+.RecentSermon_seeMore h1{
+/*	border: solid 2px red;*/
+	width: 15%;
+	height: auto;
+	font-size: 20px;
+	margin-top: 10px;
+	color: ;
+	font-family: sans-serif;
+}
+.RecentSermon_seeMore h2{
+/*	border: solid 2px red;*/
+	margin: auto;
+	font-family: fantasy;
+	margin-top: 20px;
+	text-transform: uppercase;
+	box-shadow: 0px 0px 3px 0px violet;
+	padding: 10px;
+	border-radius: 5px;
+	color: #990099;
+
+}
+.RecentSermon_seeMore{
+	height: auto;
+/*	border: solid 2px red;*/
+}
+/* Video player ////////////////*/
+.video-container p{
+	color: #990099;
+	font-weight: 700;
+	font-size: 15px;
+	width: auto;
+	font-family: arial ,sans-serif;
+}
+.video-container{
+/*	border:  solid 2px red;*/
+	margin-bottom: 5px;
+}
+.video-container iframe{
+/*	border: solid 1px red;*/
+	width: 100%;
+	margin: auto;
+	height: 540px;
+	border-radius: 10px;
+	margin-top: 2%;
+}
+/*/////////////thumbinals and title*/
+.thumb_title{
+	width:auto;
+/*	border: solid 2px red;*/
+    margin: 10px;
+}
+.thumb_title:hover{
+	box-shadow: 0px 0px 2px 2px grey;
+}
+.thumb_title p{
+	color: #990099;
+	font-weight: 700;
+	font-size: 14px;
+	width: auto;
+	font-family: arial ,sans-serif;
+
+}
+.thumb_title img{
+	border-radius: 5px;
+	width: 100%;
+	height: 210px;
+}
+.container{
+/*	border: solid 1px black;*/
+
+
+}
+.mainContainer{
+	border: solid 2px red;
+	width: auto;
+	margin: auto;
+	margin-left: ;
+	margin-top: 3%;
+	height: auto;
+/*	border: solid 3px red;*/
+
+}
+
+
+/* Silder Arrows  /////////////*/
+.slick-arrow.slick-next,
+.slick-arrow.slick-prev{
+background-color: white;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 50%;
+opacity: ;
+box-shadow: 0px 0px 10px 0px lightgrey;
+}
+
+.slick-arrow.slick-next:hover,
+.slick-arrow.slick-prev:hover
+{
+    background-color: lightgrey;
+    color: white;
+    opacity:2;
+}
+
+
+.slick-prev::before,.slick-next::before{
+   display:block;
+   color: black;
+    
+    }
+.arrow{
+margin: 20px;
+margin-top: -3%;
+z-index: 1;
+width: 40px;
+height: 40px;
+color: red;
+background-color: black;
+font-size: 20px;
+}
+/* end  Silder Arrows  ///////////*/
+
+/*All sermons */
+.Allsermons_box{
+	border: solid 2px orange;
+	width: 100%;
+	height:auto;
+	margin: auto;
+	margin-top: 10%;
+
+}
+.AllplayList-List{
+	width:25%;
+	border: solid 1px black;
+	float: right;
+
+
+	
+}
+.AllplayLists h1{
+	color: dimgray;
+	font-size: 15px;
+}
+.Allsermons_thumb{
+	background-color: lightgrey;
+	width: 75%;
+	height: 700px;
+}
+.Allsermons_box iframe{
+	background-color: grey;
+	width: 90%;
+	height: 650px;
+
+}
+ .iframe{
+	width: 50%;
+	color: white;
+	background-color: white;
+}
+.iframe{
+	color: white;
+}
+.PlaylistSermons{
+	border: solid 2px red;
+	width: 40%;
+}
+
+
+							/*  RESPONSIVE DIVCE */
+
+								@media(max-width:900px)
+								{
+								.sermon{
+									width: auto;
+									height: auto;
+								}
+								.video-container iframe{
+									height: 480px;
+								}
+								}
+								@media(max-width:768px)
+								{
+								    
+								}
+								@media(max-width:568px)
+								{
+								    
+								}

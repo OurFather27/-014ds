@@ -1,0 +1,84 @@
+.containers{
+    width: 60%;
+    height: auto;
+    margin: auto;
+}
+.container-about{
+    width:80%;
+    height: 300px;
+    background-color: white;
+    opacity: 80%;
+    margin: auto;
+    text-align: center;
+    font-size: 50px;
+    color: rgb(15 26 63);
+    font-family: inherit;
+     -webkit-box-shadow: 0px 0px 16px -9px lightgrey;
+    box-shadow: 0px 0px 40px -10px lightgrey;
+
+}
+.container-about h2{
+    animation: fadein 7s ;
+    color:#990099;
+    font-size: 90px;
+    font-weight: 1000;
+    font-style: normal;
+    text-transform: uppercase;
+    text-shadow:3px 5px 0px rgba(0, 0, 0, 0.30) ;
+    font-family: 'noirpro', sans-serif;
+
+}
+.ourMission{
+    width:80%;
+    height: auto;
+    background-color:  white;
+    margin: auto;
+    margin-top: 7%;
+    color: #373a3c;
+    line-height: 1.5;
+     -webkit-box-shadow: 0px 0px 16px -8px grey;
+    box-shadow: 0px 0px 30px -8px grey;
+}
+.ourMission h2{
+    text-align: center;
+    color:#990099;
+    font-size: 50px;
+        font-weight: 1000;
+    font-style: normal;
+    text-transform: lowercase;
+    text-shadow:3px 5px 0px rgba(0, 0, 0, 0.30) ;
+    font-family: 'noirpro', sans-serif;
+
+}
+.ourMission p{
+    padding: 10px;
+    font-family: 'noirpro', sans-serif;
+}
+.AboutUpdate{
+    border: solid 3px red;
+    height: auto;
+    width: 40%;
+    margin: auto;
+}
+..AboutCreate{
+    border: solid 3px red;
+    height: auto;
+    width: 40%;
+    margin: auto;
+}
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+.ourMission{
+    width: auto;
+    align-items: center;
+}
+.container-about{
+    width: auto;
+    margin: auto;
+}
+.OUR-VALUES{
+    width: auto;
+}
+}
+

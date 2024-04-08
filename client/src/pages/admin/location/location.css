@@ -1,0 +1,97 @@
+.Location{
+/*	border: solid 2px red;*/
+	width: 80%;
+	margin: auto;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+.Location h1{
+		color: #990099;
+	text-align: center;
+	font-size: 50px;
+	font-weight:bold;
+	font-family: inherit;
+	transition: all 0.5s ease;
+        font-size: 50px;
+        font-weight: 1000;
+    font-style: normal;
+    text-transform: uppercase;
+    text-shadow:3px 5px 0px rgba(0, 0, 0, 0.30) ;
+    font-family: 'noirpro', sans-serif;
+}
+.Location2{
+/*	border: solid 2px black;*/
+	width: 74%;
+	margin: auto;
+    margin-top: 20px;
+
+}
+.Location_container{
+	width: 46.5%;
+/*	border: solid 1px red;*/
+	margin: 10px;
+	display: inline-block;
+	box-shadow:  0px 0px 10px 0px lightgrey;
+	text-align: center;
+	cursor: pointer;
+	color: #990099;
+/*	border-top: solid 2px #990099;*/
+}
+.Location_container h4{
+/*	border: solid 2px red;*/
+	font-size: 20px;
+	font-weight: 1000;
+}
+.Location_container h3{
+	width: 50%;
+	background-color: #990099;
+	color: white;
+	border: solid 1px red;
+	margin: auto;
+	margin-top: 20px;
+
+}
+/********** Responsive Design ********/
+@media(max-width:900px)
+{
+	.Location{
+		width: auto;
+	}
+	.Location2{
+		width:auto ;
+	}
+.Location_container{
+	width: auto;
+}
+.Location_container iframe{
+	width: auto;
+}
+}
+@media(max-width:768px)
+{
+	.Location{
+		width: auto;
+	}
+	.Location2{
+		width:auto ;
+
+	}
+	.Location_container{
+	width:90% ;
+	margin: auto;
+	display: block;
+	margin-top: 10px;
+}
+}
+@media(max-width:568px)
+{
+	.Location{
+		width: auto;
+	}
+	.Location2{
+		width: ;
+	}
+	.Location_container{
+	width:;
+}
+}

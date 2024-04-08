@@ -1,0 +1,40 @@
+.Sidebar2{
+	width: 15%;
+	height: 700px;
+	float: left;
+	margin-top:0 ;
+    box-shadow: 0px 0px 15px 0px lightgray;
+            position: fixed;
+
+}
+.Sidebar2 a{
+	padding: 0px;
+}
+.Sidebar2 h2{
+	background-color: #990099;
+	color: white;
+}
+.Sidebar3{
+/*	border:solid 2px red;*/
+	margin-top: 10%;
+	margin-left: 5%;
+
+
+}
+.collaps{
+	font-family: sans-serif;
+}
+.ListCollapsMenu{
+/*	border: 2px solid red;*/
+	margin-left: 10%;
+	width: 60%;
+}
+.ListCollapsMenu li{
+	color:#990099;
+}
+.headling{
+	padding: 0px;
+	font-size: 20px;
+	color: #990099;
+	font-weight: 500;
+}
