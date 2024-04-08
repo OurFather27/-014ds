@@ -30,17 +30,17 @@ window.location.reload(false);
 <>
 <Sidebar/>
 <div className="containers">
-<Link to="/createAbout"className="btn btn-success  ">Add New +</Link>
+<Link to="/create-About"className="btn btn-success  ">Add New +</Link>
 <Link to="/about" className="btn btn-info position-absolute top-5 start-50">View Public</Link>
 <div className="container-about">
 <h2 className="">ABOUT</h2>
 </div> 
-			    {data.map((d)=>(
+			    {data.map((A)=>(
 				<div className="ourMission">
-				<h2>Our Mission</h2>
-				<p>{d.name}</p>
-				<Link to={`/updateAbout/${d._id}`} className="btn btn-sm btn-primary me-2">Edit</Link>
-				<button onClick={e => handleDelete(d._id)} className="btn btn-sm btn-danger danger-2">deleted</button>
+				<h2>{A.About_name}</h2>
+				<p>{A.About_desc}</p>
+				<Link to={`/update-About/${A._id}`} className="btn btn-sm btn-primary me-2">Edit</Link>
+				<button onClick={e => handleDelete(A._id)} className="btn btn-sm btn-danger danger-2">deleted</button>
 
 </div>
 ))}

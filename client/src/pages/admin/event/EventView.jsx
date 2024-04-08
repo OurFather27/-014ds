@@ -23,10 +23,11 @@ function EventView(){
 <div className="AdminEventBoxView">
 <div className="AdminEventBox2View">
  <div className="AdminEventBox3View">
- <img src={PF + events.img}/>
+ <img src={PF + events.Event_image}/>
 <div className="AdminEvent_content">
-<h3>{events.desc}</h3>
-<p> friday night : february 07/10/2034</p>
+<h3>{events.Event_title}</h3>
+<p> {events.Event_desc}</p>
+<p> {events.Event_date}</p>
 </div>
 </div>
  </div>

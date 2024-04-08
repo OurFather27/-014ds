@@ -6,9 +6,8 @@ import './about.css'
 function Update(){
 		const {_id}= useParams();
 		const [values, setValues]=useState({
-		name:"",
-		email:"",
-		phone:""
+		About_name:"",
+		About_desc:""
 	})
 	const history = useHistory() 
 	useEffect(()=>{
@@ -39,21 +38,15 @@ function Update(){
 		<div className="AboutUpdate">
   <form onSubmit={handleUpdate} >                
   <div>                   
-   <label htmlFor="name">Name:</label>                    
+   <label htmlFor="name">About Name:</label>                    
    <input type="text" name='name' className='form-control'
-   value={values.name} onChange={e=>  setValues({...values, name: e.target.value})}/>                
+   value={values.About_name} onChange={e=>  setValues({...values, About_name: e.target.value})}/>                
    </div>                
    <div>                    
-   <label htmlFor="email">Email:</label>                    
-   <input type="email" name='email' className='form-control'                   
-    value={values.email} onChange={e=>  setValues({...values, email: e.target.value})}/>
+   <label htmlFor="name">About Description:</label>                    
+   <input type="text" name='name' className='form-control'                   
+    value={values.About_desc} onChange={e=>  setValues({...values, About_desc: e.target.value})}/>
     </div>
-    <div>                    
-   <label htmlFor="email">phone:</label>                    
-   <input type="phone" name='phone' className='form-control'                   
-    value={values.phone} onChange={e=>  setValues({...values, phone: e.target.value})}/>
-    
-    </div><br /> 
     <button className='btn btn-info'>Update</button>
     <Link to="/admin/about"className="btn btn-primary ms-3">back</Link>            
     </form>        

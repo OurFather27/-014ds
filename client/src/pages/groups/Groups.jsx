@@ -1,9 +1,11 @@
 import Topbar from "../../components/topbar/Topbar"
+import Footer from "../../components/footer/Footer"
+import Spiner from "../../components/Spiner/Spiner"
+
 import {useEffect, useState } from "react";
 import axios from "axios";
 import {Link} from "react-router-dom"
 import './group.css'
-import Spiner from "../../components/Spiner/Spiner"
 
 function Groups() {
     const PF = process.env.REACT_APP_PUBLIC_FOLDER;
@@ -52,6 +54,7 @@ function Groups() {
 </div>
 </div>
 }
+<Footer/>
 </>
 );
 }

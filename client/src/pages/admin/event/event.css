@@ -38,7 +38,7 @@
   color: #ccc;
 }
 .AdminEvent_content p{
-  text-align: unset;
+  text-align: auto;
 }
 
 

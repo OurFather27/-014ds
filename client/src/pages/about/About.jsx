@@ -32,10 +32,10 @@ function About(){
 <div className="container-about">
 <h2 className="">ABOUT</h2>
 </div> 
-			    {data.map((d)=>(
+			    {data.map((about)=>(
 				<div className="ourMission">
-				<h2>{d.About_name}</h2>
-				<p>{d.About_desc}</p>
+				<h2>{about.About_name}</h2>
+				<p>{about.About_desc}</p>
 
 </div>
 ))}

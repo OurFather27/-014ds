@@ -51,6 +51,24 @@
 	margin-top: 20px;
 
 }
+.LocationBoxView{
+	border: solid 2px red;
+	margin: auto;
+	width: 90%;
+}
+.LocationBoxView2{
+	border: solid 3px green;
+
+}
+.LocationBoxView3 h2{
+	color: #990099;
+	font-family: jost, fantasy;
+	text-align: center;
+}
+.LocationBoxView2 iframe{
+	width: 100%;
+	text-align: center;
+}
 /********** Responsive Design ********/
 @media(max-width:900px)
 {

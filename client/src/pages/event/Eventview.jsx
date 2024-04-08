@@ -47,10 +47,12 @@ function EventView(){
 <div className="EventBoxView">
 <div className="EventBox2View">
 <div className="EventBox3View">
-<img src={PF + events.img}/>
-<div className="Event_content">
-<h3>{events.desc}</h3>
-<p> friday night : february 07/10/2034</p>
+<img src={PF + events.Event_image}/>
+<div className="EventBoxView_content">
+<h3> {events.Event_date}</h3>
+<h1>{events.Event_title}</h1>
+<p> {events.Event_desc}</p>
+
 </div>
 </div>
  </div>
@@ -63,11 +65,11 @@ function EventView(){
 <div className="AllEventBox2">
 <h1>All list Events</h1>
         {AllEvents.slice(0, 10).map((p)=>(
-          <a href={`/eventview/${p._id}`}>
+          <a href={`/event-view/${p._id}`}>
 <div className="AllEventBox3">
-<img src={PF + p.img} width="48"/>
-<p>{p.desc}</p>
-<p> friday night : february 07/10/2034</p>
+<img src={PF + p.Event_image} width="48"/>
+<h2>{p.Event_title}</h2>
+<h5>{p.Event_date}</h5>
 </div>
 </a>
 ))}

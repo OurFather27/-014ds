@@ -31,9 +31,11 @@ import AboutUpdate from "./pages/admin/about/AboutUpdate"
 import EventAdmin from "./pages/admin/event/EventAdmin"
 import EventUpdate from "./pages/admin/event/EventUpdate"
 import EventView from "./pages/admin/event/EventView"
+import AddEvent from "./pages/admin/event/AddEvent"
 import GroupAdmin from "./pages/admin/groups/GroupAdmin"
 import GroupUpdate from "./pages/admin/groups/GroupUpdate"
 import AddGroup from "./pages/admin/groups/AddGroup"
+
 
 import Users from "./pages/admin/users/Users"
 import UsersView from "./pages/admin/users/UsersView"
@@ -97,7 +99,7 @@ function App() {
           <Route path="/event">
           < Event/> 
           </Route>
-          <Route path="/eventview/:_id">
+          <Route path="/event-view/:_id">
           < Eventview/> 
           </Route>          
           <Route path="/signup">
@@ -115,19 +117,22 @@ function App() {
           <Route  path="/admin/about">
           <AboutAdmin /> 
           </Route>
-          <Route path="/createAbout">
+          <Route path="/create-About">
           < CreateAbout/> 
           </Route>
-          <Route path="/updateAbout/:_id">
+          <Route path="/update-About/:_id">
           < AboutUpdate/> 
           </Route>    
           <Route path="/admin/event">
           < EventAdmin/> 
           </Route>
-          <Route path="/admin/eventupdate/:_id">
+          <Route path="/admin/add-event">
+          < AddEvent/> 
+          </Route>          
+          <Route path="/admin/event-update/:_id">
           < EventUpdate/> 
           </Route>
-          <Route path="/admin/eventview/:_id">
+          <Route path="/admin/event-view/:_id">
           < EventView/> 
           </Route>                    
           <Route path="/admin/groups">

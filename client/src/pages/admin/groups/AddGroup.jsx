@@ -28,7 +28,7 @@ export default function Share() {
     }
     try {
       await axios.post("http://localhost:8800/api/groups", newPost);
-      history.push('/groups')
+      history.push('/admin/groups')
     } catch (err) {}
   };
 

@@ -33,9 +33,7 @@ function Home (){
         <div className="HeaderPage2">
         <a-assets><video className="" src="./yoni.mp4" loop autoPlay muted></video> </a-assets>
         </div>
-                <h1 className="">COME AS YOU ARE
-</h1>
-
+        <h1 className="">COME AS YOU ARE</h1>
       </div>
 
       {/* middle 1*/}
@@ -94,7 +92,7 @@ function Home (){
  <image className="group_continaer_image">
 <img src="./3.jpeg"/>
 </image>
-<h2>community</h2>
+<h2>Community</h2>
 <p>When investing your heart, time, family, & resources in a church, 
 </p>
 <label>Learn more</label>

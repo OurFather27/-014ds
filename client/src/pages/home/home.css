@@ -11,35 +11,28 @@ a-assets video{
   z-index:-1;
   /*to edit the opacity effect change the percentage below */
   filter:opacity(40%);
+    border-radius: 20px;
 
 
-}
-
-header h1 {
-  z-index: 1;
-  color: white;
-  font-size: 64px;
-  font-weight: 1000;
-  margin-top:-40%;
-  font-family: 'noirpro', sans-serif;
-  text-transform: uppercase;
-      text-shadow:3px 5px 0px rgba(5, 6, 7, 80.90) ;
 
 }
 .HeaderPage{
   height: auto;
   width: auto;
-  background-color: black;
+  margin-top: 0;
+  background-color: #990099;
+  border-radius: 20px;
 }
 .HeaderPage h1{
-  font-family: 'Jost',sans-serif;
-  color: white;
+  font-family: fantasy;
+  color: #eee;
   position: absolute;
   top: 50%;
   left: 50%;
-  font-size: 65px;
-  font-weight: 800;
+  font-size: 75px;
+  font-weight: 500;
   transform: translate(-50%, -50%);
+  text-shadow:3px 5px 0px rgba(0, 0, 0, 0.30) ;
 }              
                                /*middle page  for home page*/
 .middlePage{
@@ -140,13 +133,19 @@ margin-top: 5%;
   bottom: 20px;
   border-radius: 10px;
   cursor: pointer;
+  font-family: jost;
 
 
 }
 .group_continaer2 h2{
   color: #990099;
-  font-family:    fantasy;
+  font-family:    jost;
   font-size: 27px;
+  font-weight: 1000;
+}
+.group_continaer2 p{
+  font-family: jsot;
+
 }
 .group_continaer_image{
   height: auto;

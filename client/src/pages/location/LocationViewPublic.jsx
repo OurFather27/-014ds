@@ -9,16 +9,29 @@ function LocationViewPublic(){
 
 	useEffect(()=>{
 		axios.get('http://localhost:8800/api/locations/'+_id)
-		.then(res =>{
-			// console.log(res)
+		.then(res => {
+				console.log(res)
+
 			setLocation(res.data)
-			.catch(err=>console.log(err))
 		})
-	},[_id])
+		.catch(err=> console.log(err));
+	}, [_id])
 	return(
 		<>
 		<Topbar/>
-		{locationValue.Location_name}
+		<div className="LocationBoxView">
+		<div className="LocationBoxView2">
+		<div className="LocationBoxView3">
+		<h2>{locationValue.Location_name} NewTestment Chuch</h2>
+		<p>{locationValue.Location_desc}</p>
+		  </div>
+	<iframe
+      height="300" 
+      src="https://maps.google.com/maps?hl=en&amp;q=addis%20abeba+(passion%20Church)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+      </iframe>
+
+      </div>
+      </div>
 		<Footer/>
 		</>
 		)

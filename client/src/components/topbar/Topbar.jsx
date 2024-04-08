@@ -49,7 +49,7 @@ export default function Topbar() {
           <NavLink className="contact"to="/give"style={{ textDecoration: "none" }}>Give</NavLink>
           </li>
           <li>
-          <NavLink to="/admin/dashboard"style={{ textDecoration: "none" }}>admin</NavLink>
+          <NavLink to="/admin/dashboard"style={{ textDecoration: "none" }}>Admin</NavLink>
           </li>
           </ul>
          

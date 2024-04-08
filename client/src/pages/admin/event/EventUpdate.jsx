@@ -4,14 +4,18 @@ import {Link, useParams, useHistory } from 'react-router-dom'
 import Sidebar from "../../../components/sidebar/Sidebar"
 import './event.css'
 function EventUpdate(){
-	  const [file, setFile] = useState([]);
-  const desc = useRef();
+	 const [file, setFile] = useState([]);
+  const Event_title = useRef();
+  const Event_desc = useRef();
+  const Event_date = useRef();
 
 	    const PF = process.env.REACT_APP_PUBLIC_FOLDER;
 		const {_id}= useParams();
 		const [values, setValues]=useState({
-		img:"",
-		desc:""
+		Event_image:"",
+		Event_title:"",
+    Event_desc:"",
+    Event_date:""
 	})
 	const history = useHistory() 
 	useEffect(()=>{
@@ -28,14 +32,16 @@ function EventUpdate(){
   const UpdateHandler = async (e) => {
     e.preventDefault();
     const newPost = {
-      desc: desc.current.value,
+      Event_title: Event_title.current.value,
+      Event_desc: Event_desc.current.value,
+      Event_date: Event_date.current.value,
     };
     if (file) {
       const data = new FormData();
       const fileName = Date.now() + file.name;
       data.append("name", fileName);
       data.append("file", file);
-      newPost.img = fileName;
+      newPost.Event_image = fileName;
       console.log(newPost);
       try {
         await axios.put("http://localhost:8800/api/upload/"+_id, data);
@@ -54,27 +60,36 @@ function EventUpdate(){
         <Sidebar/>
          <div className="AdminEventUpdateBox">
           <form className="" onSubmit={UpdateHandler}>
-          <div className="AdminEventUpdateBoxImage">
-           <img src={PF +values.img}  width="480"/>                   
-           </div>
-           <div>
-            <label htmlFor="name">Group Name:</label>                    
-            <input type="text" name='name' className='form-control'
-            value={values.desc} ref={desc}onChange={e=>  setValues({...values, desc: e.target.value})}/>                
-          </div> 
+<div className="AdminEventUpdateBoxImage">
+<img src={values.Event_image?PF +values.Event_image: null}  width="480"/>                   
+</div>
+<div>
+<label htmlFor="name">Event title:</label>                    
+<input type="text" name='name' className='form-control'
+value={values.Event_title} ref={Event_title}onChange={e=>  setValues({...values, Event_title: e.target.value})}/>                
+</div> 
+<label htmlFor="name">Event Description:</label>                    
+<textarea type="text" name='name' className='form-control'
+value={values.Event_desc} ref={Event_desc}
+onChange={e=>  setValues({...values, Event_desc: e.target.value})}>
+</textarea> 
+<div>
+<label htmlFor="name">Event date:</label>                    
+<input type="text" name='name' className='form-control'
+value={values.Event_date} ref={Event_date}onChange={e=>  setValues({...values, Event_date: e.target.value})}/>                
+</div> 
 
-          <label htmlFor="name">Group Description:</label>                    
-          <textarea class="form-control" aria-label="With textarea"></textarea> 
-          <span className="shareOptionText">Change photos</span>
-          <input
-          type="file"
-          id="file"
-          accept=".png,.jpeg,.jpg"
-          onChange={(e) => setFile(e.target.files[0])}
-          />
-          <button className="" type="submit">
-          Share
-        </button>
+<span className="shareOptionText">Change photos</span>
+<input
+type="file"
+id="file"
+src={PF+ values.Event_image}
+accept=".png,.jpeg,.jpg"
+onChange={(e) => setFile(e.target.files[0])}
+/>
+<button className="" type="submit">
+Share
+</button>
        </form>
      </div>
        

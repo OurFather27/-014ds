@@ -22,9 +22,10 @@ margin-bottom: 20px;
      text-shadow:3px 5px 0px grey ;
     font-family: 'noirpro', fantasy;;
 }
-.EventBox2 p{
+.EventBox2 h4{
   text-align: center;
   color: #ccc;
+  font-family: jost ,sans-serif;
 }
 .EventBox3 img{
   width:100%;
@@ -41,11 +42,32 @@ margin-bottom: 20px;
 .EventBox3:hover{
     box-shadow:0px 0px 0px 2px white;
 }
-.Event_content h3{
+.Event_content{
+/*  border: solid 2px green;*/
   color: #ccc;
+  font-family: jost;
 }
 .Event_content p{
   text-align: unset;
+
+}
+
+                          /*Event View design*/
+.EventBoxView_content h1{
+  color: #990099;
+  font-family: jost, sans-serif;
+  font-weight: 900;
+  text-align: center;
+}
+.EventBoxView_content p{
+  text-align: auto;
+  font-family: jost;
+  color: #990099;
+}
+.EventBoxView_content h3{
+  color: #990099;
+  font-family: jost;
+  text-align: center;
 }
 
 /*Event View*/
@@ -72,7 +94,8 @@ margin-bottom: 20px;
 /*  border: solid 2px red;*/
 }
 
-
+                  
+                  /*All event design*/
 .AllEventBox{
   width: 90%;
 /*  border: solid 2px red;*/
@@ -83,6 +106,20 @@ margin-bottom: 20px;
 /*  border: solid 4px black;*/
   margin: auto;
   width: auto;
+}
+.AllEventBox2 h1{
+  color: white;
+  background-color: #990099;
+  font-family: jost, sans-serif;
+  font-weight: 900;
+}
+.AllEventBox3 h2{
+  color: #990099;
+  font-family: jost ,sans-serif;
+}
+.AllEventBox3 h5{
+    color: #990099;
+  font-family: jost ,sans-serif;
 }
 .AllEventBox3{
   width: 32%;

@@ -49,6 +49,8 @@
 .ourMission p{
     padding: 10px;
     font-family: 'noirpro', sans-serif;
+        line-height: 1.65em;
+    letter-spacing: 0.06em;
 }
 
 @media only screen 

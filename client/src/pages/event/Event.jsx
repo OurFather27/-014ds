@@ -23,14 +23,14 @@ function Events() {
 <div className="EventBox">
 <div className="EventBox2">
 <h1>Events</h1>
-<p>when we have the Events comming Up</p>
+<h4>when we have the Events comming Up</h4>
         {events.slice(0, 2).map((p)=>(
-          <Link to={`/eventview/${p._id}`}>
+          <Link to={`/event-view/${p._id}`}>
 <div className="EventBox3">
-<img src={PF + p.img} width="48"/>
+<img src={PF + p.Event_image} width="48"/>
 <div className="Event_content">
-<h3>{p.desc}</h3>
-<p> friday night : february 07/10/2034</p>
+<h3>{p.Event_title}</h3>
+<p>{p.Event_date}</p>
 </div>
 </div>
 </Link>

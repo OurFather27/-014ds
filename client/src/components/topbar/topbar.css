@@ -9,11 +9,11 @@
   top: 0;
   z-index: 999;
   --above-all-in-container: 10000;
-  box-shadow: 0px 2px  6px grey;
+  box-shadow: 0px 1px  6px 0px lightgrey;
 }
 
 .NavLinks {
-  text-transform: uppercase;
+  margin-top: 2%;
 
 }
 .Newtestment{
@@ -70,7 +70,7 @@
 
 .NavList_Elements ul a {
   color: black;
-  font-size: 19px;
+  font-size: 16px;
   text-align: center;
   font-weight: 500;
   text-decoration: none;

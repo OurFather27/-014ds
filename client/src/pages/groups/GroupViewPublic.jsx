@@ -4,7 +4,7 @@ import axios from "axios";
 import Topbar from "../../components/topbar/Topbar"
 import Footer from "../../components/footer/Footer"
 
-function EventView(){
+function GroupView(){
 	 const PF = process.env.REACT_APP_PUBLIC_FOLDER;
 	  const {_id}= useParams();
 		const [groups, setgroups]=useState([])
@@ -21,55 +21,34 @@ function EventView(){
 		<>
 		<Topbar/>
 <div>
-<div className="EventBoxView">
-<div className="EventBox2View">
- <div className="EventBox3View">
+<div className="GroupBoxView">
+<div className="GroupBox2View">
+ <div className="GroupBox3View">
+ <div className="GroupBox_Cover">
+ <h1>{groups.group_description}</h1>
+ <label>Get involved in Men’s Ministry where a group of men of all ages and 
+ backgrounds get together, eat, hang out and have sermon-based discussion.
+ </label>
+ <Link className="Link" to="/">Home/    </Link> 
+ <Link className="Link"to="/">Group/   </Link> 
+ <Link className="Link"to="/">Youth-Minsitry</Link>
+ </div>
  <img src={PF + groups.img}/>
-<div className="Event_content">
-<h3>{groups.group_description}</h3>
-<p> friday night : february 07/10/2034</p>
-</div>
-</div>
- </div>
- </div>
  </div>
 
-<div className="d-flex justify-content-center align-items-center">
-	 	<div className="bg-white p-3 rounded w-25">
-	 	<h2> Register</h2>
-	 	<form >
-	 		<div className="mb-3">
-	 		<label htmlFor="email">
-	 		<strong>Name</strong>
-	 		</label>
-	 		<input type="text"placeholder="Enter name"autoComplete="off"name="email"
-	 		className="form-control rounded-0"/>
+<div className="GroupBox_content2">
+<h1>Welcome to Youth</h1>
+<p> Whether you’re new to Northgate or you’ve been here a while, Men’s Ministry is a place to grow, 
+learn and connect. Strengthen your relationship with God and other men through fun events and instructive studies. 
+Sometimes we may go to a ballgame or even go out sailing. Whether you’re looking for a small group, a mentor, a Bible study, a chance to live generously with your talents or just an opportunity to play some basketball with the guys, Northgate’s Men’s Ministry has a variety of opportunities for you. We hope you’ll get plugged in where it fits you best. Watch the event calendar for upcoming events.</p>
+</div>
 
-	 		</div>
-	 		<div className="mb-3">
-	 		<label htmlFor="email">
-	 		<strong>Email</strong>
-	 		</label>
-	 		<input type="email"placeholder="Enter email"autoComplete="off"name="email"
-	 		className="form-control rounded-0"/>
-	 		
-	 		</div>
-	 		<div className="mb-3">
-	 		<label htmlFor="email">
-	 		<strong>password</strong>
-	 		</label>
-	 		<input type="password"placeholder="Enter password"autoComplete="off"name="password"
-	 		className="form-control rounded-0"/>
-	 		</div>
-	 		<button type="submit"className="btn btn-success w-100 rounded-0">Register</button>
-	 	</form>
-	 	<p> Already Have an Account </p>
-	 	<Link to="/login" className="btn btn-default border w-100 bg-light">Login
-	 	</Link>
-	 	</div>
-	 	</div>
+ 
+ </div>
+ </div>
+</div>
  <Footer/>
 		</>
 		)
 }
-export default EventView
+export default GroupView

@@ -5,9 +5,8 @@ import Sidebar from "../../../components/sidebar/Sidebar"
 
 function CreateAbout(){
         const [values, setValues]=useState({
-        name:"",
-        email:"",
-        phone:""
+        About_name:"",
+        About_desc:""
     })
     const history = useHistory();
     const handlesubmit = (event)=>{
@@ -28,21 +27,15 @@ function CreateAbout(){
   <div className='w-50 border bg-secondary text-white p-5'>            
   <form onSubmit={handlesubmit}>                
   <div>                   
-   <label htmlFor="name">Name:</label>                    
+   <label htmlFor="name">About Name:</label>                    
    <input type="text" name='name' className='form-control'
-   onChange={e=>  setValues({...values, name: e.target.value})}/>                
+   onChange={e=>  setValues({...values, About_name: e.target.value})}/>                
    </div>                
-{/*   <div>                    
-   <label htmlFor="email">Email:</label>                    
-   <input type="email" name='email' className='form-control'                   
-    onChange={e => setValues({...values, email: e.target.value})}/>
+   <div>                    
+   <label htmlFor="name">About Description:</label>                    
+   <input type="name" name='email' className='form-control'                   
+    onChange={e => setValues({...values, About_desc: e.target.value})}/>
     </div>
-    <div>                    
-   <label htmlFor="email">phone:</label>                    
-   <input type="phone" name='email' className='form-control'                   
-    onChange={e => setValues({...values, phone: e.target.value})}/>
-    
-    </div><br />*/} 
     <button className='btn btn-info'>Submit</button>            
     </form>        
     </div>    
