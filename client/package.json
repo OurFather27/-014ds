@@ -24,12 +24,10 @@
     "sweetalert": "^2.1.2"
   },
   "scripts": {
-  "ng": "set NODE_OPTIONS=--openssl-legacy-provider && ng",
-  "start": "set NODE_OPTIONS=--openssl-legacy-provider && ng serve",
-  "build": "ng build",
-  "test": "ng test",
-  "lint": "ng lint",
-  "e2e": "ng e2e"
+    "dev": "npm run serve",
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
 },
   "eslintConfig": {
     "extends": [
