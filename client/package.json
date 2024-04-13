@@ -24,11 +24,13 @@
     "sweetalert": "^2.1.2"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
+  "ng": "set NODE_OPTIONS=--openssl-legacy-provider && ng",
+  "start": "set NODE_OPTIONS=--openssl-legacy-provider && ng serve",
+  "build": "ng build",
+  "test": "ng test",
+  "lint": "ng lint",
+  "e2e": "ng e2e"
+},
   "eslintConfig": {
     "extends": [
       "react-app",
