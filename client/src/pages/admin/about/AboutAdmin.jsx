@@ -7,7 +7,7 @@ import Sidebar from "../../../components/sidebar/Sidebar"
 function About(){
 	const navigate =  useHistory();
 	const [data, setData]= useState([])
-	const {_id}= useParams();
+	const { _id}= useParams();
 
 	useEffect(()=>{
 		axios.get('http://localhost:8800/api/abouts')

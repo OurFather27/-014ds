@@ -42,7 +42,7 @@ function Sermon() {
         {
           breakpoint: 768,
           settings: {
-            slidesToShow: 2,
+            slidesToShow: 1,
             slidesToScroll: 1,
             initialSlide: 2 
           }
@@ -67,7 +67,7 @@ function Sermon() {
           var fetchsearch=`https://www.googleapis.com/youtube/v3/search?key=${API}&channelId=${channelId}&part=snippet,id&order=date&maxResults=10`
           fetch(fetchsearch).then(res=>res.json())
           .then(data=>{
-          // console.log(data)
+          console.log(data)
           const result = data.items.map(item=>{
           // console.log(item.snippet.title,item.snippet.videoId,item.snippet,thumb)
           return{title:item.snippet.title,video:item.id.videoId,thumb:item.snippet.thumbnails}
@@ -77,6 +77,7 @@ function Sermon() {
           idtitle(result[0].title)
           idthumbails(result[0,thumb])
           })
+          console.log(Sermons)
 
           },[])
           const [video,idvideo] =useState("")
@@ -121,7 +122,7 @@ const renderVideo =()=>{
     
     <div className="">
     </div>
-      <img src={item.thumb.high.url} width="300px"/>
+      <img src={item.thumb.medium.url}/>
       <p>{item.title}</p>
     </div>
     </Link>

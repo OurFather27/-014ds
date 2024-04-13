@@ -5,17 +5,17 @@ import Sidebar from "../../../components/sidebar/Sidebar"
 
 function EventView(){
 	 const PF = process.env.REACT_APP_PUBLIC_FOLDER;
-	  const {_id}= useParams();
+	  const {Event_id}= useParams();
 		const [events, setEvents]=useState([])
 	useEffect(()=>{
-		axios.get('http://localhost:8800/api/events/'+_id)
+		axios.get('http://localhost:8800/api/events/'+Event_id)
 		.then(res => {
 				console.log(res)
 
 			setEvents(res.data)
 		})
 		.catch(err=> console.log(err));
-	}, [_id])
+	}, [Event_id])
 	return(
 		<>
 <Sidebar/>

@@ -15,7 +15,7 @@ function Arrow(sild) {
 }
 
 
-function Sermon(props) {
+function SermonPlaylist(props) {
    var settings = {
       dots: true,
       autoplay:false,
@@ -53,18 +53,19 @@ function Sermon(props) {
   const {latest}=useParams();
   const [Sermons, setSermons] = useState([])
      //kalhon hulunm youtube lay yaluten playlist fetch adergo database lay save maderg kezan save yetergewn meterat
-    let playlistid=""
-    if(sermonName=="reactjs"){
-      playlistid="PLQ7HWqd0j1-m8QrtUxGT45_xzxlYM9As2" 
-    }else{
-      playlistid="PLQ7HWqd0j1-lrTG80Y32qCSjKjMrdDN8A"
-    }
+    // let playlistid=""
+    // if(sermonName=="reactjs"){
+    //   playlistid="PLQ7HWqd0j1-m8QrtUxGT45_xzxlYM9As2" 
+    // }
+    // else if(sermonName=="nodejs"){
+    //   playlistid="PLQ7HWqd0j1-n_rtq0rqZ3c2-_ut9fZDNG" 
+    // }
 
   const API ="AIzaSyDS8ThBBvBBkW5ucCyHiVrMAi-gfPRIjKo"
   const channelId ="UCc2crTFxw5qI6a96mt5IMqg"
  useEffect(()=>{
-if (sermonName=="reactjs"|| sermonName=="nodejs"){
-        var fetchplaylist =`https://youtube.googleapis.com/youtube/v3/playlistItems?part=contentDetails%2Csnippet&maxResults=20&playlistId=${playlistid}&key=AIzaSyA6KSVdV6-6ga34P1HLER42f7LCPSf__5E`
+if (sermonName){
+        var fetchplaylist =`https://youtube.googleapis.com/youtube/v3/playlistItems?part=contentDetails%2Csnippet&maxResults=20&playlistId=PLQ7HWqd0j1-n_rtq0rqZ3c2-_ut9fZDNG&key=AIzaSyA6KSVdV6-6ga34P1HLER42f7LCPSf__5E`
 
     fetch(fetchplaylist).then(res=>res.json())
     .then(data2=>{
@@ -137,7 +138,7 @@ if (sermonName=="reactjs"|| sermonName=="nodejs"){
     <div className="thumb_title">
     <div className="">
     </div>
-      <img src={item.thumb.high.url} width="300px"/>
+      <img src={item.thumb.medium.url} width="300px"/>
       <p>{item.title}</p>
     </div>
     </Link>
@@ -145,9 +146,7 @@ if (sermonName=="reactjs"|| sermonName=="nodejs"){
   </Slider>
 </div>     
 </div>
-       <div className="RecentSermon_seeMore">
-    <h2>See More Sermons</h2>
-    </div>
+
     </>
     :
     <h1>Loading...</h1>
@@ -157,5 +156,5 @@ if (sermonName=="reactjs"|| sermonName=="nodejs"){
     );
     }
 
-export default Sermon;
+export default SermonPlaylist;
  

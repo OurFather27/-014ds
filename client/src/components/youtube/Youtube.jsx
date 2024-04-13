@@ -1,7 +1,7 @@
 import {BrowserRouter, Route,Switch} from "react-router-dom";
-import Sermon from "./Sermon"
+import SearchSermon from "./SearchSermon"
 import Allsermons from "./Allsermons"
-import SermonStructure from "./SermonStructure"
+import SermonPlaylist from "./SermonPlaylist"
 function Youtube() {
   return (
 <div className="sermon">
@@ -11,10 +11,10 @@ function Youtube() {
     < Allsermons/> 
     </Route>
     <Route exact path="/sermon" >
-    <Sermon />
+    <SearchSermon />
     </Route>
     <Route path="/:sermonName">
-    <SermonStructure/>
+    <SermonPlaylist/>
     </Route>
 </Switch>
 </BrowserRouter>

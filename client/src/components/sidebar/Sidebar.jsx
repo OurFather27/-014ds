@@ -34,6 +34,9 @@ Page Layout </a>
 <Link to="/admin/groups">
 <li>Groups</li>
 </Link>
+<Link to="/admin/location">
+<li>Location</li>
+</Link>
 <Link to="/admin/about">
 <li>signu</li>
 </Link>

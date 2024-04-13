@@ -1,65 +1,37 @@
-import Topbar from "../../components/topbar/Topbar"
-import Footer from "../../components/footer/Footer"
-import "./give.css"
-import Helmet from 'react-helmet';
-import Spiner from "../../components/Spiner/Spiner"
-import {useEffect, useState} from "react"
+// import {useEffect, useState } from "react";
+// import axios from "axios";
+// import {Link} from "react-router-dom"
+// function Events() {
+//     const PF = process.env.REACT_APP_PUBLIC_FOLDER;
+//   const [data, setData]= useState([])
 
+//   const [events, setEvents] = useState([]);
 
-function Give () {
-  // Loading use state
-    const [showspin, setShowSpin] = useState(true);
-  useEffect(() => {
-    setTimeout(() => {
-      setShowSpin(false)
-    }, 800)
-  }, [])
-  // end Loading use state
+//   const API ="AIzaSyDNJg_eDMvqrOMw1jouynPopCmFAkyCaUI"
+//   const channelId ="UCc2crTFxw5qI6a96mt5IMqg"
+//   var fetchurl =`https://www.googleapis.com/youtube/v3/playlists?key=${API}&channelId=${channelId}&part=snippet,id&order=date&maxResults=50`
+//   const [allvideos, setAllvideos]= useState([])
+//   useEffect(() => {
+//    fetch(fetchurl).then((response)=>response.json()).then((resJson)=>{
+//     const result = resJson.items.map(doc=>({
+//       ...doc,
+//       // Videolink: "https://www.youtube.com/embed/"+doc.id.videoId
+//     }));
+//     setAllvideos(result)      
+//    })
+//   }, []);
 
-  return (
-   <>
-   <Topbar/>
-    {/* Loading....*/}{showspin ? <Spiner/>:
-   <div>
-{/*<Helmet bodyAttributes={{style: "background-image : url('./6.jpeg')"}}/>*/}
-<div className="container-Give">
-<h1 className="">Give</h1>
-</div>
-<div className="Give_contenair">
-<div className="Give_contenair_2">
-
-<h2> Ways To Give</h2>
-<h3>1,Online</h3>
-<p>
-1, Through your bank
-<li> This is the preferred means of giving online. Using your bank’s bill pay system. 
-Set up the church as a payee and the bank sends a “payment”.</li>
-
-2,Through the giving app
-<li> Simple and secure. Give a single gift, or schedule recurring giving using your checking account, 
-debit, or credit card.</li>
-<li> You have the option to pay the processing fee’s on your donation</li>
-</p>
-<h3>2. Text Message</h3>
-<p>You can now use your debit/credit card or ACH from your bank to give through Give.Church. 
-Click GIVE above to get started or text GIVE to 508.544.0709.</p>
-<h3>3. Mail</h3>
-<p>If you would like to give by mail, please make checks payable to <span>Faith Community Church.</span> Checks may be mailed to: </p>
-
-
-<h3>4. Give Assets</h3>
-<p>Please email <span>charla@faithma.org</span> to discuss donating assets to Faith Community Church.</p>
-}
-</div>
-</div>
-</div>
-}
-      <div className="footer_height">
-       </div>
-     <Footer/>
-   </>
-
-  );
-}
-
-export default Give
+//     // console.log(allvideos[]['id'])
+//   // console.log(allvideos[0]['snippet']['title'])
+//   return (
+//     <>
+// {/*    {allvideos.map((item)=>(
+//       <div>
+//       {item.snippet.title}
+//       </div>
+//       ))}*/}
+//     }
+// </>
+// );
+// }
+// export default Events

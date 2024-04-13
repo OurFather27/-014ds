@@ -7,7 +7,7 @@ import Spiner from "../../components/Spiner/Spiner"
 
 function EventView(){
 	 const PF = process.env.REACT_APP_PUBLIC_FOLDER;
-	  const {_id}= useParams();
+	  const {Event_id}= useParams();
 		const [events, setEvents]=useState([])
 		const [AllEvents, setAllEvents]=useState([])
 
@@ -20,14 +20,14 @@ function EventView(){
 																		}, [])
 																		// end Loading use state
 	useEffect(()=>{
-		axios.get('http://localhost:8800/api/events/'+_id)
+		axios.get('http://localhost:8800/api/events/'+Event_id)
 		.then(res => {
 				console.log(res)
 
 			setEvents(res.data)
 		})
 		.catch(err=> console.log(err));
-	}, [_id])
+	}, [Event_id])
 
 // View or fetch all events lists
 	  useEffect(() => {
@@ -41,7 +41,7 @@ function EventView(){
   }, []);
 	return(
 		<>
-		<Topbar/>
+		<Topbar/>		
 		{/*Loading.....*/} {showspin ?  <Spiner /> :
 <div>
 <div className="EventBoxView">
@@ -65,7 +65,7 @@ function EventView(){
 <div className="AllEventBox2">
 <h1>All list Events</h1>
         {AllEvents.slice(0, 10).map((p)=>(
-          <a href={`/event-view/${p._id}`}>
+          <a href={`/event-view/${p.Event_id}`}>
 <div className="AllEventBox3">
 <img src={PF + p.Event_image} width="48"/>
 <h2>{p.Event_title}</h2>
@@ -76,8 +76,9 @@ function EventView(){
 </div>
 </div>
 
-
+<div>
  <Footer/>
+ </div>
 		</>
 		)
 }

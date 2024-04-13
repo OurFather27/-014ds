@@ -25,7 +25,7 @@ function Events() {
 <h1>Events</h1>
 <h4>when we have the Events comming Up</h4>
         {events.slice(0, 2).map((p)=>(
-          <Link to={`/event-view/${p._id}`}>
+          <Link to={`/event-view/${p.Event_id}`}>
 <div className="EventBox3">
 <img src={PF + p.Event_image} width="48"/>
 <div className="Event_content">

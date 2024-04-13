@@ -11,7 +11,7 @@ function Update(){
 	})
 	const history = useHistory() 
 	useEffect(()=>{
-		axios.get('http://localhost:8800/api/abouts/'+_id)
+		axios.get(`http://localhost:8800/api/abouts/`+_id)
 		.then(res => {
 				console.log(res)
 
@@ -22,7 +22,7 @@ function Update(){
 
 	const handleUpdate=(event)=>{
 		event.preventDefault();
-	    axios.put('http://localhost:8800/api/abouts/'+_id, values)
+	    axios.put(`http://localhost:8800/api/abouts/`+_id, values)
 		.then(res => {
 			console.log(res)
 			history.push('/admin/about')

@@ -18,9 +18,10 @@
   font-size: 40px;
   font-weight: 700;
   color: #990099;
-    text-transform: uppercase;
-     text-shadow:3px 5px 0px lightgrey ;
-    font-family: 'noirpro', sans-serif;
+  text-transform: uppercase;
+  text-shadow:3px 5px 0px lightgrey ;
+  font-family: 'noirpro', sans-serif;
+
 }
 .AdminEventBox2 p{
   text-align: center;
@@ -36,6 +37,7 @@
 }
 .AdminEvent_content h3{
   color: #ccc;
+  text-decoration: none;
 }
 .AdminEvent_content p{
   text-align: auto;

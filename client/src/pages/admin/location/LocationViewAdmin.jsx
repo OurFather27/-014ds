@@ -1,12 +1,10 @@
-import Topbar from "../../components/topbar/Topbar"
-import Footer from "../../components/footer/Footer"
+import Sidebar from "../../../components/sidebar/Sidebar"
 import {useEffect, useState} from "react"
 import {Link, useParams} from "react-router-dom"
 import axios from "axios"
 function LocationViewPublic(){
 	const [locationValue, setLocation] = useState([])
 	const {_id} = useParams()
-
 	useEffect(()=>{
 		axios.get('http://localhost:8800/api/locations/'+_id)
 		.then(res => {
@@ -18,10 +16,10 @@ function LocationViewPublic(){
 	}, [_id])
 	return(
 		<>
-		<Topbar/>
-		<div className="LocationBoxView">
-		<div className="LocationBoxView2">
-		<div className="LocationBoxView3">
+		<Sidebar/>
+		<div className="AdminLocationBoxView">
+		<div className="AdminLocationBoxView2">
+		<div className="AdminLocationBoxView3">
 		<h2>{locationValue.Location_name}--NewTestment Chuch</h2>
 		<p>{locationValue.Location_Address}</p>
 		  </div>
@@ -32,7 +30,6 @@ function LocationViewPublic(){
 
       </div>
       </div>
-		<Footer/>
 		</>
 		)
 }

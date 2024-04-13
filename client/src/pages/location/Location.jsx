@@ -46,7 +46,7 @@ function Location() {
         {Location.map((location)=>(
           <div className="Location_container">
            <h4>{location.Location_name}</h4><br/>
-            <p>{location.Location_desc}</p>
+            <p>{location.Location_Address}</p>
         <Link to={`/location-view/${location._id}`}><h3>View Direction</h3></Link>
          </div>
           ))}

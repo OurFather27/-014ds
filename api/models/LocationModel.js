@@ -9,7 +9,7 @@ const LocationSchema = mongoose.Schema(
       type: String,
       max: 500,
     },
-    Location_desc: {
+    Location_Address: {
       type: String,
       max: 500,
     },

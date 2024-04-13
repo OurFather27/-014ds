@@ -6,11 +6,12 @@ box-shadow: 0px 0px 10px 0px lightgrey;
 margin-top: 40px;
 background-color: #990099;
 margin-bottom: 20px;
+border-radius: 20px;
 }
 .EventBox2{
 /*  border: solid 2px black;*/
   height: auto;
-  width: 70%;
+  width: 60%;
   margin: auto;
 }
 .EventBox2 h1{
@@ -34,8 +35,8 @@ margin-bottom: 20px;
 .EventBox3{
   width:45%;
   height: 400px;
-/*  border:solid 1px white;*/
-  margin: 10px;
+/*  border:solid 4px red;*/
+  margin: 11px;
   display: inline-block;
   box-shadow: 0px 0px 10px 0px white;
 }

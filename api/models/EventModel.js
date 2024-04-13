@@ -1,5 +1,7 @@
 const mongoose = require('mongoose');
-const EventDetails = mongoose.Schema(
+const mongoosesequence = require('mongoose-sequence');
+
+const EventSchema = mongoose.Schema(
   {
     Event_title: {
       type: String,
@@ -18,4 +20,6 @@ const EventDetails = mongoose.Schema(
 );
 
 
-module.exports = mongoose.model("Event", EventDetails);
+EventSchema.plugin(mongoosesequence(mongoose), { inc_field: 'Event_id' });
+
+module.exports = mongoose.model("Event", EventSchema);

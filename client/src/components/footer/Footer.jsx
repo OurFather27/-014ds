@@ -1,9 +1,11 @@
 import  "./footer.css";
+import img from "../../logo.png";
 import { Link } from "react-router-dom";
 import {FaYoutube,FaTwitter, FaFacebook,FaInstagram,FaTelegram} from "react-icons/fa"
 //import home from "../youtube/home"
 function Footer() {
-
+const date = new Date().toLocaleDateString();
+const time = new Date().toLocaleTimeString();
   return (
     <>
     <footer>
@@ -11,12 +13,13 @@ function Footer() {
     <div className="footer_continaer">
       <div className="footer_1">
        <Link to="/#" style={{ textDecoration: "none" }}>
-          <img src="./logo.png"/>
+          <img src={img}/>
 
           {/*<div className="Newtestment"><span>Newtestment</span><p>Church</p></div>*/}
         </Link>
         {/*<h3>Join Us on Sundy at:</h3>*/}
         <p> addis abeba , bole ,<br></br> old street 474ERV 5HDJH</p>
+        <h3> Connect With Us</h3>
         <div className="media_icon">
                         <a href="#"><i><FaFacebook/></i></a>
                         <a href="#"><i><FaYoutube/></i></a>
@@ -59,6 +62,7 @@ function Footer() {
     <div className="footer_2">
     <hr/>
       <p>© 2024 Newtestment Church. All Rights Reserved</p>
+       <p>Page Last Updated: {date} at {time}</p>
     </div>      
     </div>
 </footer>

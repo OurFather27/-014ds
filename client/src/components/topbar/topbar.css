@@ -70,10 +70,12 @@
 
 .NavList_Elements ul a {
   color: black;
-  font-size: 16px;
+  text-transform: ;
+  font-size: 20px;
   text-align: center;
-  font-weight: 500;
+  font-weight: 600;
   text-decoration: none;
+  font-family: jost;
 }
 .NavList_Elements li{
    /* color:;

@@ -39,7 +39,7 @@ function Groups() {
 <h1>Groups</h1>
 <p>groups details and more things</p>
         {Groups.map((p)=>(
-<Link to={`/groupview/${p._id}`}>
+<Link className="GroupBox2Link" to={`/group-view/${p._id}`}>
 <div className="GroupBox3">
 <img src={PF + p.img} width="48"/>
 <div className="Group_content">

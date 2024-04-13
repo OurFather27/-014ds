@@ -65,7 +65,7 @@ app.post("/api/upload", upload.single("file"), (req, res) => {
     console.error(error);
   }
 });
-app.put("/api/upload/:_id", upload.single("file"), (req, res) => {
+app.put("/api/upload/:Event_id", upload.single("file"), (req, res) => {
   try {
     return res.status(200).json("File uploded successfully");
   } catch (error) {

@@ -53,7 +53,7 @@ function Home (){
      
           <div className="middlePage_continaer">
            <Link to="/sermon">
-          <img src={item.snippet.thumbnails.high.url} width="300px"/>
+          <img src={item.snippet.thumbnails.medium.url} width="360px" height="120"/>
           </Link> 
           </div>   
                        

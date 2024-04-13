@@ -14,7 +14,6 @@ router.post("/", async (req, res) => {
 });
 
 //get all Events
-
 router.get("/", async (req, res) => {
   try {
     const events = await Event.find();
@@ -24,17 +23,16 @@ router.get("/", async (req, res) => {
     console.log(" errorr")
   }
 });
-
-router.get("/:_id", async (req, res) => {
+// Event View or get by Event id  admin and client 
+router.get("/:Event_id", async (req, res) => {
   try {
-    const Event_id = await Event.findById(req.params._id);
-   res.status(200).json(Event_id);
+    const Eventid = await Event.findOne(req.body.Event_id);
+   res.status(200).json(Eventid);
   } catch (err) {
     res.status(500).json(err);
   }
 });
-//update a About
-
+//update a Event
 router.put("/:_id", async (req, res) => {
   try {
     const updateEvent = await Event.findById(req.params._id);

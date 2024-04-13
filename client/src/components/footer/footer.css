@@ -8,6 +8,7 @@
   height: auto;
   position: static;
   bottom:0;
+
 /*  border: solid 3px black;*/
 
 
@@ -22,8 +23,14 @@
   margin: auto;
   margin-top: 20px;
   color: white;
-
   padding-bottom: 20px;
+  font-family: jost;
+}
+.footer_1 h2{
+  font-family: jost, fantasy;
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
 }
 .footer_1 img{
     width: 50px;
@@ -39,6 +46,7 @@
 .footer_2 p{
   color: white;
   text-align: center;
+  font-family: jost;
 }
 .footer_2 hr{
   color: white;
@@ -53,9 +61,11 @@
   list-style: none;
   cursor: pointer;
   color: white;
+  font-family: jost;
 }
 .footer_1 a{
   color: white;
+  font-family: jost;
 }
 .footer_1 li:hover{
   text-decoration: underline;
@@ -64,6 +74,7 @@
 .footer_1 p{
   color: white;
   font-size: 13px;
+  font-family: jost;
 
 }
 .media_icon{

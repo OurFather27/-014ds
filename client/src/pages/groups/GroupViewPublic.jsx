@@ -29,24 +29,58 @@ function GroupView(){
  <label>Get involved in Men’s Ministry where a group of men of all ages and 
  backgrounds get together, eat, hang out and have sermon-based discussion.
  </label>
- <Link className="Link" to="/">Home/    </Link> 
- <Link className="Link"to="/">Group/   </Link> 
- <Link className="Link"to="/">Youth-Minsitry</Link>
+ <br/>
+ <br/>
+ <Link className="Link"to="/groups">  Groups/   </Link> 
+ <Link  className="Link"to="#">  {groups.group_description}</Link>
  </div>
  <img src={PF + groups.img}/>
  </div>
 
 <div className="GroupBox_content2">
-<h1>Welcome to Youth</h1>
+<h1 class="text">Welcome to Youth</h1>
 <p> Whether you’re new to Northgate or you’ve been here a while, Men’s Ministry is a place to grow, 
 learn and connect. Strengthen your relationship with God and other men through fun events and instructive studies. 
-Sometimes we may go to a ballgame or even go out sailing. Whether you’re looking for a small group, a mentor, a Bible study, a chance to live generously with your talents or just an opportunity to play some basketball with the guys, Northgate’s Men’s Ministry has a variety of opportunities for you. We hope you’ll get plugged in where it fits you best. Watch the event calendar for upcoming events.</p>
+Sometimes we may go to a ballgame or even go out sailing. Whether you’re looking for a small group, a mentor, a Bible study, 
+a chance to live generously with your talents or just an opportunity to play some basketball with the guys, Northgate’s Men’s Ministry has a variety of opportunities for you. We hope you’ll get plugged in where it fits you best. 
+Watch the event calendar for upcoming events.</p>
+</div>
+ </div>
+ </div>
 </div>
 
- 
- </div>
- </div>
-</div>
+<div className="GroupRegisterBox d-flex justify-content-center align-items-center">
+	 	<div className="bg-white p-3 rounded w-25">
+	 	<h2> Join Us {groups.group_description} Group </h2>
+	 	<form >
+	 		<div className="mb-3">
+	 		<label htmlFor="email">
+	 		<strong>Name</strong>
+	 		</label>
+	 		<input type="text"placeholder="Enter name"autoComplete="off"name="email"
+	 		className="form-control rounded-0"/>
+
+	 		</div>
+	 		<div className="mb-3">
+	 		<label htmlFor="email">
+	 		<strong>Email</strong>
+	 		</label>
+	 		<input type="email"placeholder="Enter email"autoComplete="off"name="email"
+	 		className="form-control rounded-0"/>
+	 		
+	 		</div>
+	 		<div className="mb-3">
+	 		<label htmlFor="phone">
+	 		<strong>phone</strong>
+	 		</label>
+	 		<input type="phone"placeholder="Enter password"autoComplete="off"name="phone"
+	 		className="form-control rounded-0"/>
+	 		</div>
+	 		<button type="submit"className="btn w-100 rounded-0">Join</button>
+	 	</form>
+	 	
+	 	</div>
+	 	</div>
  <Footer/>
 		</>
 		)

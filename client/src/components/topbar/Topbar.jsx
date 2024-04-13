@@ -1,5 +1,6 @@
-import LoadingIcons from 'react-loading-icons'
 import "./topbar.css";
+import img from "../../logo.png";
+import LoadingIcons from 'react-loading-icons'
 import { Link } from "react-router-dom";
 import { useContext , useState} from "react";
 import { MdMenu } from "react-icons/md";
@@ -17,7 +18,7 @@ export default function Topbar() {
     <nav className="NavContainer">
       <div className="">
         <Link to="/#" style={{ textDecoration: "none" }}>
-          <img src="./logo.png"/>
+          <img src={img}/>
 
           {/*<div className="Newtestment"><span>Newtestment</span><p>Church</p></div>*/}
         </Link>
