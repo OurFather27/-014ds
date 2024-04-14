@@ -11,7 +11,7 @@ function Update(){
 	})
 	const history = useHistory() 
 	useEffect(()=>{
-		axios.get(`https://014ds-2.onrender.com/api/abouts/`+_id)
+		axios.get(`https://014ds-qqbn.vercel.app/api/abouts/`+_id)
 		.then(res => {
 				console.log(res)
 
@@ -22,7 +22,7 @@ function Update(){
 
 	const handleUpdate=(event)=>{
 		event.preventDefault();
-	    axios.put(`https://014ds-2.onrender.com/api/abouts/`+_id, values)
+	    axios.put(`https://014ds-qqbn.vercel.app/api/abouts/`+_id, values)
 		.then(res => {
 			console.log(res)
 			history.push('/admin/about')

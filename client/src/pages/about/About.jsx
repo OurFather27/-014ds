@@ -17,8 +17,7 @@ function About(){
 																		}, [])
 																		// end Loading use state
 	useEffect(()=>{
-		axios.get('http://localhost:8800/api/abouts')
-		axios.get('https://014ds-2.onrender.com/api/abouts')
+		axios.get('https://014ds-qqbn.vercel.app/api/abouts')
 		.then(res => setData(res.data))
 		.catch(err=> console.log(err));
 	}, [])
