@@ -31,7 +31,7 @@ export default function ContactFeedback() {
         contact_desc: contact_desc.current.value,
       }
       try {
-        await axios.post("https://marsilapi.onrender.com/api/auth/contact", NewContact);
+        await axios.post("https://014ds-2.onrender.com/api/auth/contact", NewContact);
         alert('succss')
         window.location.reload();
       } catch (err) {

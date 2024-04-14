@@ -8,7 +8,7 @@ function EventView(){
 	  const {Event_id}= useParams();
 		const [events, setEvents]=useState([])
 	useEffect(()=>{
-		axios.get('http://localhost:8800/api/events/'+Event_id)
+		axios.get('https://014ds-2.onrender.com/api/events/'+Event_id)
 		.then(res => {
 				console.log(res)
 

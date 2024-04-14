@@ -11,7 +11,7 @@ function CreateAbout(){
     const history = useHistory();
     const handlesubmit = (event)=>{
         event.preventDefault(); 
-        axios.post('http://localhost:8800/api/abouts', values)
+        axios.post('https://014ds-2.onrender.com/api/abouts', values)
         .then(res => {
             console.log(res)
             history.push('/admin/about')

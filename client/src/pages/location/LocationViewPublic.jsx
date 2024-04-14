@@ -8,7 +8,7 @@ function LocationViewPublic(){
 	const {_id} = useParams()
 
 	useEffect(()=>{
-		axios.get('http://localhost:8800/api/locations/'+_id)
+		axios.get('https://014ds-2.onrender.com/api/locations/'+_id)
 		.then(res => {
 				console.log(res)
 

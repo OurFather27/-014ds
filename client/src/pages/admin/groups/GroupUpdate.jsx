@@ -15,7 +15,7 @@ function GroupUpdate(){
 	})
 	const history = useHistory() 
 	useEffect(()=>{
-		axios.get('http://localhost:8800/api/groups/'+_id)
+		axios.get('https://014ds-2.onrender.com/api/groups/'+_id)
 		.then(res => {
 				console.log(res)
 
@@ -38,11 +38,11 @@ function GroupUpdate(){
       newPost.img = fileName;
       console.log(newPost);
       try {
-        await axios.put("http://localhost:8800/api/upload/"+_id, data);
+        await axios.put("https://014ds-2.onrender.com/api/upload/"+_id, data);
       } catch (err) {}
     }
  try {
-      await axios.put("http://localhost:8800/api/groups/"+_id, newPost);
+      await axios.put("https://014ds-2.onrender.com/api/groups/"+_id, newPost);
       history.push('/admin/groups')
     } catch (err) {}
   };

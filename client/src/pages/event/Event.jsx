@@ -9,7 +9,8 @@ function Events() {
 
   useEffect(() => {
     const fetchEvents = async () => {
-      const res = await axios.get('http://localhost:8800/api/events')
+      const res = await axios.get('https://014ds-2.onrender.com/api/events')
+      
       setEvents(
         res.data.sort((a,b) => new Date(a) < new Date(b) ? 1 : -1)
 )

@@ -9,7 +9,7 @@ function GroupView(){
 	  const {_id}= useParams();
 		const [groups, setgroups]=useState([])
 	useEffect(()=>{
-		axios.get('http://localhost:8800/api/groups/'+_id)
+		axios.get('https://014ds-2.onrender.com/api/groups/'+_id)
 		.then(res => {
 				console.log(res)
 

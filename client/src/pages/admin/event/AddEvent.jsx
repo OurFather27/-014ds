@@ -30,11 +30,11 @@ export default function Share() {
   console.log("The string is null");
 }
       try {
-        await axios.post("http://localhost:8800/api/upload", data);
+        await axios.post("https://014ds-2.onrender.com/api/upload", data);
       } catch (err) {}
     }
     try {
-      await axios.post("http://localhost:8800/api/events", newPost);
+      await axios.post("https://014ds-2.onrender.com/api/events", newPost);
       history.push("/admin/event")
     } catch (err) {}
   };

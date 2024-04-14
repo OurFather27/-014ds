@@ -12,7 +12,7 @@ function AdminEvents() {
   const history = (useHistory)
   useEffect(() => {
     const fetchEvents = async () => {
-      const res = await axios.get('http://localhost:8800/api/events')
+      const res = await axios.get('https://014ds-2.onrender.com/api/events')
       setEvents(
         res.data.sort((a,b) => new Date(a) < new Date(b) ? 1 : -1)
 )
@@ -23,7 +23,7 @@ function AdminEvents() {
 const handleDelete= (_id)=> {
 const confirm=window.confirm("Would you like to Delete?")
 if(confirm){
-axios.delete('http://localhost:8800/api/events/'+_id)
+axios.delete('https://014ds-2.onrender.com/api/events/'+_id)
 .then(res =>{
 window.location.reload(false);
 }).catch(err=>console.log(err))

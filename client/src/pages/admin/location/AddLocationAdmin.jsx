@@ -28,11 +28,11 @@ export default function Share() {
   console.log("The string is null");
 }
       try {
-        await axios.post("http://localhost:8800/api/upload", data);
+        await axios.post("https://014ds-2.onrender.com/api/upload", data);
       } catch (err) {}
     }
     try {
-      await axios.post("http://localhost:8800/api/locations", newPost);
+      await axios.post("https://014ds-2.onrender.com/api/locations", newPost);
       history.push("/admin/location")
     } catch (err) {}
   };

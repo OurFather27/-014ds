@@ -24,7 +24,7 @@ function Location() {
   
   useEffect(() => {
     const fetchLocation = async () => {
-      const res = await axios.get('http://localhost:8800/api/locations')
+      const res = await axios.get('https://014ds-2.onrender.com/api/locations')
       setLocation(
         res.data.sort((a,b) => new Date(a) < new Date(b) ? 1 : -1)
 )

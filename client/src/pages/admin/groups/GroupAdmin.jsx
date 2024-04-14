@@ -11,7 +11,7 @@ function Groups() {
   const {_id}= useParams();
   useEffect(() => {
     const fetchGroups = async () => {
-      const res = await axios.get('http://localhost:8800/api/groups')
+      const res = await axios.get('https://014ds-2.onrender.com/api/groups')
       setGroups(
         res.data.sort((a,b) => new Date(a) < new Date(b) ? 1 : -1)
 )
@@ -21,7 +21,7 @@ function Groups() {
 const handleDelete= (_id)=> {
 const confirm=window.confirm("Would you like to Delete?")
 if(confirm){
-axios.delete('http://localhost:8800/api/groups/'+_id)
+axios.delete('https://014ds-2.onrender.com/api/groups/'+_id)
 .then(res =>{
 window.location.reload(false);
 }).catch(err=>console.log(err))

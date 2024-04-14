@@ -19,7 +19,7 @@ function EventUpdate(){
 	})
 	const history = useHistory() 
 	useEffect(()=>{
-		axios.get('http://localhost:8800/api/events/'+_id)
+		axios.get('https://014ds-2.onrender.com/api/events/'+_id)
 		.then(res => {
 				console.log(res)
 
@@ -44,11 +44,11 @@ function EventUpdate(){
       newPost.Event_image = fileName;
       console.log(newPost);
       try {
-        await axios.put("http://localhost:8800/api/upload/"+_id, data);
+        await axios.put("https://014ds-2.onrender.com/api/upload/"+_id, data);
       } catch (err) {}
     }
  try {
-      await axios.put("http://localhost:8800/api/events/"+_id, newPost);
+      await axios.put("https://014ds-2.onrender.com/api/events/"+_id, newPost);
       history.push('/admin/event')
     } catch (err) {}
   };

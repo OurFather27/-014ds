@@ -12,7 +12,7 @@ function Location() {
   const [Location, setLocation] = useState([]);
   useEffect(() => {
     const fetchLocation = async () => {
-      const res = await axios.get('http://localhost:8800/api/locations')
+      const res = await axios.get('https://014ds-2.onrender.com/api/locations')
       setLocation(
         res.data.sort((a,b) => new Date(a) < new Date(b) ? 1 : -1)
           )
@@ -22,7 +22,7 @@ function Location() {
   const handleDelete= (_id)=> {
 const confirm=window.confirm("Would you like to Delete?")
 if(confirm){
-axios.delete('http://localhost:8800/api/locations/'+_id)
+axios.delete('https://014ds-2.onrender.com/api/locations/'+_id)
 .then(res =>{
 window.location.reload(false);
 }).catch(err=>console.log(err))

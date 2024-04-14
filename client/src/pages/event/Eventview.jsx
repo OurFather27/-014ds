@@ -20,7 +20,7 @@ function EventView(){
 																		}, [])
 																		// end Loading use state
 	useEffect(()=>{
-		axios.get('http://localhost:8800/api/events/'+Event_id)
+		axios.get('https://014ds-2.onrender.com/api/events/'+Event_id)
 		.then(res => {
 				console.log(res)
 
@@ -32,7 +32,7 @@ function EventView(){
 // View or fetch all events lists
 	  useEffect(() => {
     const fetchEvents = async () => {
-      const res = await axios.get('http://localhost:8800/api/events')
+      const res = await axios.get('https://014ds-2.onrender.com/api/events')
       setAllEvents(
         res.data.sort((a,b) => new Date(a) < new Date(b) ? 1 : -1)
 )

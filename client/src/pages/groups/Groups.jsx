@@ -21,7 +21,7 @@ function Groups() {
                                     // end Loading use state
   useEffect(() => {
     const fetchGroups = async () => {
-      const res = await axios.get('http://localhost:8800/api/groups')
+      const res = await axios.get('https://014ds-2.onrender.com/api/groups')
       setGroups(
         res.data.sort((a,b) => new Date(a) < new Date(b) ? 1 : -1)
 )
