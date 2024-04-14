@@ -37,7 +37,7 @@ app.use("/uploads", express.static(path.join(__dirname, "public/uploads")));
 
 //middleware
 app.use(cors({
-  origin:["http://localhost:3000"],
+  origin:["https://014ds-3.onrender.com"],
   method: ["GET", "POST"],
   credentials: true
   }));
