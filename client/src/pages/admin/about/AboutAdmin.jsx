@@ -10,7 +10,7 @@ function About(){
 	const { _id}= useParams();
 
 	useEffect(()=>{
-		axios.get('https://014ds-qqbn.vercel.app/api/abouts')
+		axios.get('https://014ds-2.onrender.com/api/abouts')
 		.then(res => setData(res.data))
 		.catch(err=> console.log(err));
 	}, [])
@@ -19,7 +19,7 @@ function About(){
 const handleDelete= (_id)=> {
 const confirm=window.confirm("Would you like to Delete?")
 if(confirm){
-axios.delete('https://014ds-qqbn.vercel.app/api/abouts/'+_id)
+axios.delete('https://014ds-2.onrender.com/api/abouts/'+_id)
 .then(res =>{
 window.location.reload(false);
 }).catch(err=>console.log(err))

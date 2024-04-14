@@ -17,7 +17,7 @@ function About(){
 																		}, [])
 																		// end Loading use state
 	useEffect(()=>{
-		axios.get('https://014ds-qqbn.vercel.app/api/abouts')
+		axios.get('https://014ds-2.onrender.com/api/abouts')
 		.then(res => setData(res.data))
 		.catch(err=> console.log(err));
 	}, [])
