@@ -16,7 +16,8 @@ const contact = mongoose.Schema(
     },
     contact_desc: {
       type:String,
-    }
+    },
+    status:Number
   },
   { timestamps: true }
 );

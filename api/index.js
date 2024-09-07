@@ -13,11 +13,14 @@ const { MONGO_URL, port } = require("./.env");
 const cookieParser = require('cookie-parser')
 // speacfice Routing 
 const EventRoute = require("./routes/Event")
+const ContactRoute = require("./routes/Contact")
 const AboutRoute = require("./routes/About")
 const AuthRoute = require("./routes/Auth")
 const GroupRoute = require("./routes/Group")
 const LocationRoute = require("./routes/Location")
-
+const MessageRoute = require("./routes/Message")
+const UserRoute = require("./routes/User")
+const TeleApiRoute = require("./routes/TeleApi")
 
 
 dotenv.config();
@@ -37,7 +40,7 @@ app.use("/uploads", express.static(path.join(__dirname, "public/uploads")));
 
 //middleware
 app.use(cors({
-  origin:["https://014ds-3.onrender.com"],
+  origin:["http://localhost:5173"],
   method: ["GET", "POST"],
   credentials: true
   }));
@@ -65,7 +68,7 @@ app.post("/api/upload", upload.single("file"), (req, res) => {
     console.error(error);
   }
 });
-app.put("/api/upload/:Event_id", upload.single("file"), (req, res) => {
+app.put("/api/upload/:_id", upload.single("file"), (req, res) => {
   try {
     return res.status(200).json("File uploded successfully");
   } catch (error) {
@@ -87,9 +90,14 @@ app.get("/",(req, res)=>{
 
 app.use("/api/events", EventRoute);
 app.use("/api/abouts", AboutRoute);
-app.use("/api/auth", AuthRoute);
+app.use("/api/auths", AuthRoute);
 app.use("/api/groups", GroupRoute);
+app.use("/api/contacts", ContactRoute);
 app.use("/api/locations", LocationRoute);
+app.use("/api/messages", MessageRoute);
+app.use("/api/users", UserRoute);
+app.use("/api/teleApi", TeleApiRoute);
+
 
 app.listen(port, () => {
   console.log(`Backend server is running! ${port}`);

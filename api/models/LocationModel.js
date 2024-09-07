@@ -24,8 +24,9 @@ const LocationSchema = mongoose.Schema(
     Location_map: {
       type: String,
       max: 500,
-    }
+    },
   },
+  { timestamps: true }
 );
 
 

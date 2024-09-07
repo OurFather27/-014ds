@@ -28,21 +28,20 @@ router.get("/", async (req, res) => {
     console.log(" errorr")
   }
 });
-//  find By name
-router.get("/:About_id", async (req, res) => {
+
+// find by Object Id
+router.get("/Byobject/:_id", async (req, res) => {
   try {
-    const {About_id} = req.body;
-    const Aboutid = await AboutModel.findOne(About_id);
-   res.status(200).json(Aboutid);
+    const about_objectId = await AboutModel.findById(req.params._id);
+   res.status(200).json(about_objectId);
   } catch (err) {
     res.status(500).json(err);
   }
 });
-// find by Object Id
-router.get("/:_id", async (req, res) => {
+router.get("/:About_name", async (req, res) => {
   try {
-    const about_objectId = await AboutModel.findById(req.params._id);
-   res.status(200).json(about_objectId);
+    const AboutByname = await AboutModel.findOne({About_name:req.params.About_name});
+   res.status(200).json(AboutByname);
   } catch (err) {
     res.status(500).json(err);
   }

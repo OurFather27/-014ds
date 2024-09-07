@@ -12,8 +12,12 @@ const About = mongoose.Schema(
       type: String,
       max: 500,
     },
-
+    About_details: {
+      type: String,
+      
+    },    
   },
+  { timestamps: true }
 );
 
 About.plugin(mongoosesequence(mongoose), { inc_field: 'About_id' });

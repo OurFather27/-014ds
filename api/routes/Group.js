@@ -13,6 +13,16 @@ router.post("/", async (req, res) => {
   }
 });
 
+router.post("/:Group_id", async (req, res) => {
+  const newPost = new Group(req.body);
+  try {
+    const savedPost = await newPost.save(req.params.Group_id);
+    res.status(200).json(savedPost);
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
 //get all Groups
 router.get("/", async (req, res) => {
   try {
@@ -32,16 +42,16 @@ router.get("/:_id", async (req, res) => {
     res.status(500).json(err);
   }
 });
-//POST a GROUP By Id
-router.post("/:_id", async (req, res) => {
-  try {
-    const group_id = await Group.findById(req.params._id);
-    await group_id.save(req.body);
-   res.status(200).json(group_id);
-  } catch (err) {
-    res.status(500).json(err);
-  }
-});
+// //POST a GROUP By Id
+// router.post("/:_id", async (req, res) => {
+//   try {
+//     const group_id = await Group.findById(req.params._id);
+//     await group_id.save(req.body);
+//    res.status(200).json(group_id);
+//   } catch (err) {
+//     res.status(500).json(err);
+//   }
+// });
 //update a About
 
 router.put("/:_id", async (req, res) => {
@@ -63,3 +73,25 @@ router.delete("/:_id", async (req, res) => {
   }
 });
 module.exports = router;
+
+
+
+// Group View or get by Group id  admin and client 
+// router.get("/:Group_id", async (req, res) => {
+//   try {
+//     const Groupid = await Group.findOne({Group_id:req.params.Group_id});
+//    res.status(200).json(Groupid);
+//   } catch (err) {
+//     res.status(500).json(err);
+//   }
+// });
+// // update a Group
+// router.put("/:Group_id", async (req, res) => {
+//   try {
+//     const updateGroup = await Group.findOne({Group_id:req.params.Group_id});
+//       await updateGroup.updateOne({ $set: req.body });
+//       res.status(200).json("the Group has been updated");
+//       } catch (err) {
+//     res.status(500).json(err);
+//   }
+// });

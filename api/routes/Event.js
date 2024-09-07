@@ -26,16 +26,16 @@ router.get("/", async (req, res) => {
 // Event View or get by Event id  admin and client 
 router.get("/:Event_id", async (req, res) => {
   try {
-    const Eventid = await Event.findOne(req.body.Event_id);
+    const Eventid = await Event.findOne({Event_id:req.params.Event_id});
    res.status(200).json(Eventid);
   } catch (err) {
     res.status(500).json(err);
   }
 });
-//update a Event
-router.put("/:_id", async (req, res) => {
+// update a Event
+router.put("/:Event_id", async (req, res) => {
   try {
-    const updateEvent = await Event.findById(req.params._id);
+    const updateEvent = await Event.findOne({Event_id:req.params.Event_id});
       await updateEvent.updateOne({ $set: req.body });
       res.status(200).json("the Event has been updated");
       } catch (err) {
