@@ -20,7 +20,7 @@ const GroupRoute = require("./routes/Group")
 const LocationRoute = require("./routes/Location")
 const MessageRoute = require("./routes/Message")
 const UserRoute = require("./routes/User")
-const TeleApiRoute = require("./routes/TeleApi")
+const TeleApiRoute = require("./routes/teleApi")
 
 
 dotenv.config();
